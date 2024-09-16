@@ -1,53 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harsh Rakesh Tripathi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-content">
+            <h1>Harsh Rakesh Tripathi</h1>
+            <p>Data Scientist | AI Developer | Machine Learning Enthusiast</p>
+            <a href="assets/resume.pdf" class="button">Download Resume</a>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h1>Your Name</h1>
-            <p>Web Developer | Designer | Creative Thinker</p>
-        </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Data Scientist with experience in building AI products, computer vision applications, and deep learning models. Currently pursuing my Master of Science in Computer Science at SUNY Buffalo, I have a passion for turning data into actionable insights.</p>
+    </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Brief introduction about yourself and your professional background.</p>
-        </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">C++</div>
+            <div class="skill-item">R</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">Machine Learning</div>
+            <div class="skill-item">Deep Learning</div>
+            <div class="skill-item">Computer Vision</div>
+            <div class="skill-item">AWS</div>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <!-- Add your project items here -->
-        </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-timeline">
+            <div class="timeline-item">
+                <h3>Piramal Capital and Housing Finance Limited</h3>
+                <p>Data Scientist (July 2023 - August 2024)</p>
+                <ul>
+                    <li>Lead developer for a generalized signature detection model (91% accuracy).</li>
+                    <li>Co-Lead developer of automated form cropping service for multiple products.</li>
+                    <li>Core contributor in building a document validation service using AWS Textract and YOLOv8.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Piramal Capital and Housing Finance Limited</h3>
+                <p>Data Scientist Intern (July 2022 - June 2023)</p>
+                <ul>
+                    <li>Implemented an anti-spoofing solution for face liveliness detection, reducing KYC time by 75%.</li>
+                    <li>Worked on fraud detection model analysis with XGBoost and RandomForest.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <!-- Add your skills here -->
-        </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <h3>Person Retrieval Using Soft Biometrics</h3>
+                <p>Developed a custom NLP framework for person retrieval using soft biometrics. Published a paper at IEEE VTC 2023 Fall.</p>
+            </div>
+            <div class="project-item">
+                <h3>Attendance System using Face Detection</h3>
+                <p>Built an attendance system using face detection technology to automate attendance tracking.</p>
+            </div>
+            <div class="project-item">
+                <h3>Air Doodling</h3>
+                <p>Used OpenCV and NumPy to create a virtual air doodling program with interactive drawing features.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <!-- Add contact form or information here -->
-        </section>
-    </main>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>© 2024 Harsh Rakesh Tripathi</p>
     </footer>
 
     <script src="script.js"></script>
